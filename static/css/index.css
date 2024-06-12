@@ -113,20 +113,27 @@ body {
 
 .results-carousel {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 每行四个视频 */
-  grid-gap: 20px; /* 视频间隔20px */
-  padding: 20px; /* 容器内边距 */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .results-carousel .item {
-  width: 100%; /* 单个视频容器宽度 */
-  overflow: hidden; /* 隐藏溢出部分 */
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  padding: 0;
+  font-size: 0;
 }
 
-.results-carousel video {
-  width: 100%; /* 视频宽度，充满整个视频容器 */
-  height: auto; /* 自动高度，保持视频比例 */
+.results-carousel .item video {
+  width: 100%;
+  height: auto;
+  margin: 0;
 }
+
 
 
 .interpolation-panel {
