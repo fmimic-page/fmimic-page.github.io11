@@ -173,13 +173,13 @@ body {
 
 .video-small-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  width: 80%;
-  padding: 20px;
+  grid-template-columns: repeat(1, 1fr); /* 每行只显示一个视频 */
+  gap: 20px; /* 保持20px的间隙 */
+  width: 100%; /* 调整网格宽度为100% */
+  padding: 20px; /* 边距为20px */
 }
 
 video {
-  width: 100%;
-  height: auto;
+  width: 100%; /* 视频宽度占满整个网格列 */
+  height: auto; /* 高度自动调整以保持视频比例 */
 }
