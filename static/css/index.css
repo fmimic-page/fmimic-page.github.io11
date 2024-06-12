@@ -113,23 +113,21 @@ body {
 
 .results-carousel {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 每行四个元素 */
-  grid-gap: 20px; /* 根据需要调整间距 */
-  justify-items: center; /* 居中显示每个视频 */
-  padding: 20px; /* 添加一些内边距 */
+  grid-template-columns: repeat(4, 1fr); /* 每行四个视频 */
+  grid-gap: 20px; /* 视频间隔20px */
+  padding: 20px; /* 容器内边距 */
 }
 
 .results-carousel .item {
-  width: 100%; /* 确保视频充满容器 */
-  border: none; /* 如果不需要边框可以去掉 */
-  overflow: hidden; /* 避免内容溢出 */
-  padding: 0; /* 移除内边距 */
+  width: 100%; /* 单个视频容器宽度 */
+  overflow: hidden; /* 隐藏溢出部分 */
 }
 
 .results-carousel video {
-  width: 100%; /* 视频充满整个.item容器 */
-  height: auto; /* 保持视频的原始高宽比 */
+  width: 100%; /* 视频宽度，充满整个视频容器 */
+  height: auto; /* 自动高度，保持视频比例 */
 }
+
 
 .interpolation-panel {
   background: #f5f5f5;
