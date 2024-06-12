@@ -170,3 +170,16 @@ body {
 .video {
   width: 100%; /* 视频宽度填满容器 */
 }
+
+.video-small-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  padding: 20px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
