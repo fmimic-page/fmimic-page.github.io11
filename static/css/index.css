@@ -163,3 +163,20 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap; /* 允许内容换行 */
+  justify-content: center; /* 居中显示 */
+}
+
+.video {
+  flex: 1 1 23%; /* 每个视频占据行宽的约1/4，留一些间隙 */
+  margin: 10px; /* 视频之间的间距 */
+}
+
+video {
+  width: 100%; /* 使视频充满容器 */
+  height: auto; /* 维持视频的原始高宽比 */
+}
