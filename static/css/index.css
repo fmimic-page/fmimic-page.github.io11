@@ -160,18 +160,13 @@ body {
 }
 
 
-.video-container {
-  display: flex;
-  flex-wrap: wrap; /* 允许内容换行 */
-  justify-content: center; /* 居中显示 */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 创建三列，每列占据等宽 */
+  gap: 10px; /* 设置视频间的间隔 */
 }
 
 .video {
-  flex: 1 1 23%; /* 每个视频占据行宽的约1/4，留一些间隙 */
-  margin: 10px; /* 视频之间的间距 */
-}
-
-video {
-  width: 100%; /* 使视频充满容器 */
-  height: auto; /* 维持视频的原始高宽比 */
+  width: 100%; /* 视频宽度填满容器 */
 }
