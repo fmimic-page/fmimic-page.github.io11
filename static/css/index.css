@@ -112,15 +112,11 @@ body {
 
 
 .results-carousel {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
   overflow: hidden;
 }
 
 .results-carousel .item {
-  width: 100%;
+  margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -128,11 +124,10 @@ body {
   font-size: 0;
 }
 
-.results-carousel .item video {
-  width: 100%;
-  height: auto;
+.results-carousel video {
   margin: 0;
 }
+
 
 
 
@@ -177,6 +172,6 @@ body {
 }
 
 video {
-  width: 100%; /* 使视频充满容器 */
+  width: 20%; /* 使视频充满容器 */
   height: auto; /* 维持视频的原始高宽比 */
 }
