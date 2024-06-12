@@ -163,7 +163,7 @@ body {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 创建三列，每列占据等宽 */
+  grid-template-columns: repeat(4, 1fr); /* 创建三列，每列占据等宽 */
   gap: 10px; /* 设置视频间的间隔 */
 }
 
