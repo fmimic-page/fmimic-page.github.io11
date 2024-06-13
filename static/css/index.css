@@ -112,15 +112,11 @@ body {
 
 
 .results-carousel {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
   overflow: hidden;
 }
 
 .results-carousel .item {
-  width: 100%;
+  margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -128,11 +124,10 @@ body {
   font-size: 0;
 }
 
-.results-carousel .item video {
-  width: 100%;
-  height: auto;
+.results-carousel video {
   margin: 0;
 }
+
 
 
 
@@ -164,19 +159,54 @@ body {
   border-radius: 5px;
 }
 
-
-.video-container {
-  display: flex;
-  flex-wrap: wrap; /* 允许内容换行 */
-  justify-content: center; /* 居中显示 */
-}
-
-.video {
-  flex: 1 1 23%; /* 每个视频占据行宽的约1/4，留一些间隙 */
-  margin: 10px; /* 视频之间的间距 */
+.video-small-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 每行只显示一个视频 */
+  gap: 10px; /* 保持20px的间隙 */
+  width: 100%; /* 调整网格宽度为100% */
+  padding: 20px; /* 边距为20px */
 }
 
 video {
-  width: 100%; /* 使视频充满容器 */
-  height: auto; /* 维持视频的原始高宽比 */
+  width: 100%; /* 视频宽度占满整个网格列 */
+  height: auto; /* 高度自动调整以保持视频比例 */
+}
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 创建三列，每列占据等宽 */
+  gap: 30px; /* 设置视频间的间隔 */
+}
+
+.video {
+  width: 100%; /* 视频宽度填满容器 */
+}
+
+
+.video-long-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 每行只显示一个视频 */
+  gap: 30px; /* 保持20px的间隙 */
+  width: 100%; /* 调整网格宽度为100% */
+  padding: 20px; /* 边距为20px */
+}
+
+.video-long {
+  width: 100%; /* Sets each video to take up half the width of .media-grid, making two videos per row */
+  height: auto;
+}
+
+.video-description {
+  text-align: center;
+  color: #666;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.long-video-description {
+  text-align: center;
+  color: #666;
+  font-size: 20px;
+  margin-top: 10px;
 }
