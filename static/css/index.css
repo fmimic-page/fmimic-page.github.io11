@@ -175,7 +175,7 @@ video {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 创建三列，每列占据等宽 */
+  grid-template-columns: repeat(6, 1fr); /* 创建三列，每列占据等宽 */
   gap: 30px; /* 设置视频间的间隔 */
 }
 
@@ -186,7 +186,7 @@ video {
 
 .video-long-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 每行只显示一个视频 */
+  grid-template-columns: repeat(4, 1fr); /* 每行只显示一个视频 */
   gap: 30px; /* 保持20px的间隙 */
   width: 100%; /* 调整网格宽度为100% */
   padding: 20px; /* 边距为20px */
