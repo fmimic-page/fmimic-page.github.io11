@@ -172,7 +172,7 @@ body {
 .video {
   width: 100%; /* 视频宽度占满整个网格列 */
   height: auto; /* 高度自动调整以保持视频比例 */
-  border: 1px solid #747474;
+  border: 1px solid #bbb;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -188,7 +188,7 @@ body {
 
 .video {
   width: 100%; /* 视频宽度填满容器 */
-  border: 1px solid #747474;
+  border: 1px solid #bbb;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -206,7 +206,7 @@ body {
 .video-long {
   width: 100%; /* Sets each video to take up half the width of .media-grid, making two videos per row */
   height: auto;
-  border: 1px solid #747474;
+  border: 1px solid #bbb;
   border-radius: 10px;
   overflow: hidden;
 }
